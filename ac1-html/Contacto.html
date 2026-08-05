@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="dilan alvarado">
-    <meta name="description" content="Bliblioteca">
-    <meta name="keywords" content=", biblioteca">
+    <meta name="description" content="contacto de la pagina">
+    <meta name="keywords" content="datos ,consulta ,contacto">
     <title>Portada | Sabores del Barrio</title>
-    <link rel="icon" href="recursos/favicon.png" type="image/png">
+    <link rel="icon" href="recursos/books.png" type="image/png">
 </head>
 <body> 
  <header>
@@ -23,26 +23,54 @@
   <p>El sitio mas confiable en el area de mantenimiento y construccion de bicicletas</p>
  </header>
 
-<h1>Contactanos</h1>
-<p>Ante cualquier duda o consulta puedes llenar el siguiente formulario</p>
-<p>
-    <label for="Contacto">Nombre</label><br>
-    <input type="text" id="nombre" placeholder="dilan alvarado" required minlength="10" maxlength="20"><br>
-    <label for="cedula">Cedula</label><br>
-    <input type="text" id="cedula" placeholder="11 111 1111" minlength="8" maxlength="11"><br>
-    <label for="telefono" >Telefono</label><br>
-    <input type="number" id="cedula" placeholder="1234 5678" minlength="9" maxlength="11"><br>
-    <label for="edad"aria-required>Edad</label><br>
-    <input type="number" id="edad" placeholder="18" minlength="5"maxlength="99"><br>
-    <label for="datetime-local">Dia de la consulta</label><br>
-    <input type="datetime-local" id="sucursal"><br>
-    <label for="motivo">Motivo de consulta</label><br>
-    <input type="text" id="nombre" placeholder="problemas con los libros" required minlength="10" maxlength="200">
-</p>
-</section>
+<main>
+    <section>
+        <h1>Contactanos</h1>
+        <form action="#">
+            <legend>Ante cualquier duda o consulta puedes llenar el siguiente formulario</legend>
+            <fieldset>
+                <label for="Contacto">Nombre</label><br>
+                <input type="text" id="nombre" placeholder="dilan alvarado" required minlength="10" maxlength="20"><br>
+
+                <label for="cedula">Cedula</label><br>
+                <input type="text" id="cedula" placeholder="123456789" required minlength="9" maxlength="11"><br>
+
+                <label for="telefono" >Telefono</label><br>
+                <input type="tel" id="numero" placeholder="1234-5678" required minlength="8" maxlength="8"><br>
+
+                <label for="edad"aria-required>Edad</label><br>
+                <input type="number" id="edad" placeholder="18" minlength="5"maxlength="99"><br>
+
+                <label for="datetime-local">Dia de la consulta</label><br>
+                <input type="datetime-local" id="sucursal"><br>
+
+                <fieldset>
+                    <input type="radio" id="Prestamo" name="Libro" value="Prestamo">
+                    <label for="Prestamo">Prestamo</label><br>
+
+
+                    <input type="radio" id="Compra" name="Libro" value="Compra">
+                    <label for="Compra">Compra</label><br>
+                    
+                    
+                    <input type="radio" id="Devolucion" name="Libro" value="Devolucion">
+                    <label for="Devolucion">Devolucion</label><br>
+                    
+                </fieldset>
+
+                <label for="motivo">Motivo de consulta</label><br>
+                <textarea name="motivo" id="motivo" placeholder="consulta de libros"></textarea>
+
+
+                <br><br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
   <footer><h2>Letras abiertas</h2>
     <address>www.biblioteca letras abiertas.com</address>
-    <p>Copyright ©biblioteca abierta,derechos reservados</p>
-    </footer>   
+    <p> &copy; biblioteca abierta,derechos reservados</p>
+</footer>  
 </body>
 </html>

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="dilan alvarado">
     <meta name="description" content="Bliblioteca">
-    <meta name="keywords" content=", biblioteca">
+    <meta name="keywords" content="libros,talleres,compras,precios">
     <title>Portada | Sabores del Barrio</title>
-    <link rel="icon" href="recursos/favicon.png" type="image/png">
+    <link rel="icon" href="recursos/books.png" type="image/png">
 </head>
 <body> 
- <header>
-      <nav>
+<header>
+    <nav>
             <ul>
                 <li><a href="index.html">Portada</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -20,89 +20,97 @@
             </ul>
         </nav>
         <h1>Letras Abiertas/Taller de bicicletas</h1>
-  <p>El sitio mas confiable en el area de mantenimiento y construccion de bicicletas</p>
- </header>
+        <p>El sitio mas confiable en el area de mantenimiento y construccion de bicicletas</p>
+</header>
 
-<h1>Nuestros servicios</h1>
-<p>ofrecemos una gran variedad de servicios para aquellos amantes de la lectura</p>
-<section id="desordenado">horarios
-<h3>agenda un espacio en cualquier momento</h3>
-<ul>
-    <li>mañana-de 7 a 11 am</li>
-    <li>md-12 del dia</li>
-    <li>tarde-de 1 a 6 pm</li>
-    <li>noche-de 7 a 10 pm</li>
-</ul>
-<h2>talleres de literatura</h2>
+<main>
+<article>
+<h2>Nuestros servicios</h2>
+    
+    <p>Ofrecemos una gran variedad de servicios para aquellos amantes de la lectura</p>
+        <section id="desordenado">
+            <h3>Agenda un espacio en cualquier momento</h3>
+                <ul>
+                    <li>mañana-de 7 a 11 am</li>
+                    <li>md-12 del dia</li>
+                    <li>tarde-de 1 a 6 pm</li>
+                    <li>noche-de 7 a 10 pm</li>
+                </ul>
+        </section>
 
-<section id="Taller"></section>
-<dl>
-<dt>Fantasia</dt>
-<dd>20$xdia</dd>
-<dt>Cocinaa</dt>
-<dd>10$xdia</dd>
-<dt>Manualidades</dt>
-<dd>30$xdia</dd>
-<h2>Datos del solicitante</h2>
+        <section id="Taller">
+            <h3>Talleres de literatura</h3>
+                <dl>
+                <dt>Actuacion</dt>
+                <dd>20$xdia</dd>
 
-<p>
-    <label for="Datos">nombre</label>
-    <input type="text" name="nombre" id="nombre" required minlength="9" maxlength="20" placeholder="dilan alvarado"><br>
+                <dt>Cocinaa</dt>
+                <dd>10$xdia</dd>
 
-    <label for="Datos">cedula</label>
-    <input type="number" name="cedula" id="cedula" required minlength="9" maxlength="9" placeholder="11 111 1111"><br>
-<label for="Datos" aria-required="true">edad</label>
-    <input type="number" name="edad" id="edad" required minlength="9" maxlength="99" placeholder="18">
+                <dt>Manualidades</dt>
+                <dd>30$xdia</dd>
+        </section>
 
-</p>
+        <section>
+            <table border="1">
+            <caption>Alquiler de libros</caption>
+                <thead>
+                    <tr>
+                        <th scope="row">Temas</th>
+                        <th scope="row">Precios (en dolares)</th>
+                        <th scope="row"> Version Pdf</th>
+                        <th scope="row">Disponibilidad</th>
+                    </tr>
+                </thead>
 
+                <tbody>
+                    <tr>
+                        <th>literatura</th>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>8 unidades</td>
+                    </tr>
+                        <th>Cocina</th>
+                        <td>80</td>
+                        <td>67</td>
+                        <td>5 unidades</td>
 
+                    <tr>
+                        <th>romance</th>
+                        <td>60</td>
+                        <td>50</td>
+                        <td>6 unidades</td>
 
-
-
-
-
-<h3>En caso de retraso se cobraran multas</h3>
-<table border="5">
-    <caption> 
-          <thead><td>Multa por dias</td></thead>
-        <tbody>
-            <tr>
-            <td>1 dia</td>
-            <th>5 dolares</th>
-            </tr>
-            <tr>
-            <td>2 dias</td>
-            <th>6 dolares</th>
-            </tr>
-            <tr></tr><td>4dias</td>
-            <th>8 dolares</tr>
-            </th>
-             </tr>
-            <tr></tr><td>mas de 1 semana</td>
-            <th>15 dolares</tr>
-            </th>
-             <tfoot><td>favor puntualidad</td></tfoot>
-            </tbody >
-        
-           
-       
-        
-            
-        
-
-    </caption>
-</table>
+                    </tr>
 
 
+                    <tr>
+                        <th>Aventura</th>
+                        <td>70</td>
+                        <td>60</td>
+                        <td>7 unidades</td>
+
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr> 
+                        <td colspan="4">
+                            En caso de solicitar un libro en fisico y atrasarse con el pago se realizara una multa
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+</article>
+</main>
 
 
-
-
-</dl>
-     <footer><h2>Letras abiertas</h2>
-    <address>www.biblioteca letras abiertas.com</address>
-    <p>Copyright ©biblioteca abierta,derechos reservados</p>
-    </footer>
+<footer>
+    <adress>www.biblioteca letras abiertas.com</adress>
+    <p> &copy; biblioteca abierta,derechos reservados</p>
+</footer>
 </body>
 </html>
