@@ -1,10 +1,16 @@
 * {
-    margin: 20px ;
+    margin-left: 20px ;
+    margin-right: 20px;
     padding: 0;
     box-sizing: border-box;
 }
 body{
     background-color: rgb(240, 234, 234);
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
 }
 
 h2::after {
@@ -74,21 +80,9 @@ h2::after {
 }
 
 /*animaicion */
-@keyframes aparece {
-   opacity: 0;
-   transform: translateY: 20px;
-
-   }
-To{
-    opacity: (1);
-    transform: translateY(0);
-}
-
-
-
-
-.boton{
-    animation: aparece 0.6s ease-out;
+@keyframes pulso {
+    0% 100%{transform: scale (1);}
+    50%{transform:scale(1.08);}
 }
 
 .cita {
@@ -96,11 +90,27 @@ background-color: blanchedalmond;
 padding: 20px;
  border-left: 10px solid brown;
 }
+
+.boton{
+    animation: pulso 2s  ease-in-out infinite;
+    animation-direction: reverse;
+}
 .cita p::before {
  content: " '' ";
  font-weight: 800;
  font-size: 60px;
  
+}
+.cita p::first-line{
+    font-family:cursive;
+   
+}
+
+
+.panel-aviso{
+    background-color: darkgray;
+    padding: 20px;
+    border-left: 10px solid brown;
 }
 
    
