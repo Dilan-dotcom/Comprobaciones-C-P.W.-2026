@@ -4,11 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-  
+}
 
 /*index*/
 body {
   background-color: rgb(240, 234, 234);
+   font-family: "Cedarville Cursive", cursive;
 }
 
 .cabecera {
@@ -227,4 +228,11 @@ outline: none;}
     text-decoration: none;
 
 }
+.boton-principal{
+    margin: 450px;
+}
 
+.boton-principal:hover{
+ 
+    scale: calc(1.1);
+}
