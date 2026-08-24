@@ -1,150 +1,187 @@
 * {
-    margin-left: 20px ;
-    margin-right: 20px;
-    padding: 0;
-    box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*index*/
-body{
-    background-color: rgb(240, 234, 234);
+body {
+  background-color: rgb(240, 234, 234);
 }
 
-.cabecera{
-    display: flex;
-    flex-direction: row;
+.cabecera {
+  display: flex;
+  flex-direction: row;
 }
 
 h2::after {
-    content: 📖;
-    color: red;
-    object-fit:contain;
+  content: 📖;
+  color: red;
+  object-fit: contain;
 }
 
 .cita-autoria::first-letter {
- font-size: 2rem;
- color: rgb(83, 83, 87);
- font-weight: 600;
+  font-size: 2rem;
+  color: rgb(83, 83, 87);
+  font-weight: 600;
 }
 .cita-autoria::after {
-    content: →;
-    font-weight: bold;
+  content: →;
+  font-weight: bold;
 }
 
-.hero{
-    display: block;
-    align-self: center;
-    margin-top: 5px;
-   margin-right: 5px;
-    background-color:  rgb(103, 26, 26);
-    padding: 100px;
-    color: white;
-    align-items: center;
-
+.hero {
+  display: block;
+  align-self: center;
+  margin-top: 5px;
+  margin-right: 5px;
+  background-color: rgb(103, 26, 26);
+  padding: 100px;
+  color: white;
+  align-items: center;
 }
 
-.hero p{
-    margin-top: 20px;
-    margin-left: 200px;
-    font-size: smaller;
-    margin-bottom: 50px;
+.hero p {
+  margin-top: 20px;
+  margin-left: 200px;
+  font-size: smaller;
+  margin-bottom: 50px;
 }
-.hero-texto{
-    padding-left: 35px;
+.hero-texto {
+  padding-left: 35px;
 }
 .hero h2 {
-    font-size: 30px;
-    margin-left: 200px;
-    
+  font-size: 30px;
+  margin-left: 200px;
 }
-.boton{
-    align-content: center;
-    margin-left: 25rem;
-    padding: 20px;
-    background-color: green;
-    color: white;
-    border-collapse: collapse;
-
-} 
+.boton {
+  align-content: center;
+  margin-left: 25rem;
+  padding: 20px;
+  background-color: green;
+  color: white;
+  border-collapse: collapse;
+}
 /*se trabajo con grid aqui*/
-.rejilla-servicios{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+.rejilla-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-.tarjeta{
-    background-color: rgb(180, 175, 167);
-   
+.tarjeta {
+  background-color: rgb(180, 175, 167);
 }
-.tarjeta h3{
-    font-size: 25px;
+.tarjeta h3 {
+  font-size: 25px;
 }
 
 /*animaicion */
 @keyframes pulso {
-    0% 100%{transform: scale (1);}
-    50%{transform:scale(1.08);}
+  0% 100% {
+    transform: scale (1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
 }
 
 .cita {
-background-color: blanchedalmond;
-padding: 20px;
- border-left: 10px solid brown;
+  background-color: blanchedalmond;
+  padding: 20px;
+  border-left: 10px solid brown;
 }
 
-.boton{
-    animation: pulso 2s  ease-in-out infinite;
-    animation-direction: reverse;
+.boton {
+  animation: pulso 2s ease-in-out infinite;
+  animation-direction: reverse;
 }
 .cita p::before {
- content: " '' ";
- font-weight: 800;
- font-size: 60px;
- 
+  content: " '' ";
+  font-weight: 800;
+  font-size: 60px;
 }
-.cita p::first-line{
-    font-family:cursive;
-   
+.cita p::first-line {
+  font-family: cursive;
 }
-.cita-autoria{
-   text-align: right;
+.cita-autoria {
+  text-align: right;
 }
 
-
-.panel-aviso{
-    background-color: darkgray;
-    padding: 20px;
-    border-left: 10px solid brown;
-    padding-bottom: 20px;
-    margin-bottom: 80px;
+.panel-aviso {
+  background-color: darkgray;
+  padding: 20px;
+  border-left: 10px solid brown;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
 }
 
-.pie-contenido{
-    background-color: maroon;
-    color: white;
-    padding-top: 50px;
+.pie-contenido {
+  background-color: maroon;
+  color: white;
+  padding-top: 50px;
 }
-.datos-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
+.datos-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
 }
-header nav ul{
-    display: flex;
-    justify-content:end;
-    text-decoration-line: none;
-    
-    
-    
-
+header nav ul {
+  display: flex;
+  justify-content: end;
+  text-decoration-line: none;
 }
 
-#cabecera{
-    background-color: rgb(251, 249, 246);
-    padding: 5px;
-    border-bottom: 10px solid lightgray ;
+#cabecera {
+  background-color: rgb(251, 249, 246);
+  padding: 5px;
+  border-bottom: 10px solid lightgray;
+  position: sticky;
 }
 /*catalogo*/
-   
-   
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tbody tr:nth-child(even) {
+  background-color: beige;
+}
+thead {
+  background-color: brown;
+  color: aliceblue;
+}
+tbody:hover {
+  background-color: darkgray;
+}
+tfoot {
+  background-color: brown;
+  color: aliceblue;
+}
+
+.glosario {
+  background-color: azure;
+  padding: 20px;
+}
+
+.glosario dt {
+  color: black;
+  font-weight: 800;
+  padding: 5px;
+}
+.glosario dd {
+  padding-left: 50px;
+}
+
+.grupo-campos {
+  background-color: whitesmoke;
+}
+.campo input {
+  background-color: darkgrey;
+}
+
+input:focus {
+  border-color: rgb(7, 7, 7);
+  outline: none;
+}
