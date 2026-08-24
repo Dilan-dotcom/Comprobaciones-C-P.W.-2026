@@ -14,10 +14,12 @@ body {
   flex-direction: row;
 }
 
-h2::after {
-  content:  ★;
-  color: red;
-  object-fit: contain;
+h1:hover{
+    
+    background-color: cadetblue;
+    background-size:cover;
+
+}
 }
 
 .cita-autoria::first-letter {
