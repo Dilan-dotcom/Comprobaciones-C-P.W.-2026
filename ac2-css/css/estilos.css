@@ -1,9 +1,10 @@
-*,
-*::before, 
-*::after {
-    margin: 0 ;
+* {
+    margin: 20px ;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 234, 234);
 }
 
 h2::after {
@@ -40,23 +41,38 @@ h2::after {
     font-size: smaller;
     margin-bottom: 50px;
 }
+.hero-texto{
+    padding-left: 35px;
+}
 .hero h2 {
     font-size: 30px;
-    margin-left: 150px;
+    margin-left: 200px;
+    
 }
 .boton{
+    align-content: center;
     margin-left: 25rem;
-    padding: 15px;
+    padding: 20px;
     background-color: green;
     color: white;
     border-collapse: collapse;
 
 } 
-
+/*se trabajo con grid aqui*/
 .rejilla-servicios{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 10px;
 }
+
+.tarjeta{
+    background-color: rgb(180, 175, 167);
+    
+}
+.tarjeta h3{
+    font-size: 25px;
+}
+
    
 
 
