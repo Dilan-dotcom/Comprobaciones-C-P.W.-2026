@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*index*/
 body{
     background-color: rgb(240, 234, 234);
 }
@@ -105,13 +106,31 @@ padding: 20px;
     font-family:cursive;
    
 }
+.cita-autoria{
+   text-align: right;
+}
 
 
 .panel-aviso{
     background-color: darkgray;
     padding: 20px;
     border-left: 10px solid brown;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
 }
 
+.pie-contenido{
+    background-color: maroon;
+    color: white;
+    padding-top: 50px;
+}
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/*catalogo*/
    
    
