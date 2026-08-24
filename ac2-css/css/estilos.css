@@ -1,0 +1,62 @@
+*,
+*::before, 
+*::after {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2::after {
+    content: 📖;
+    color: red;
+    object-fit:contain;
+}
+
+.cita-autoria::first-letter {
+ font-size: 2rem;
+ color: rgb(83, 83, 87);
+ font-weight: 600;
+}
+.cita-autoria::after {
+    content: →;
+    font-weight: bold;
+}
+
+.hero{
+    display: block;
+    align-self: center;
+    margin-top: 5px;
+   margin-right: 5px;
+    background-color:  rgb(103, 26, 26);
+    padding: 100px;
+    color: white;
+    align-items: center;
+
+}
+
+.hero p{
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: smaller;
+    margin-bottom: 50px;
+}
+.hero h2 {
+    font-size: 30px;
+    margin-left: 150px;
+}
+.boton{
+    margin-left: 25rem;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border-collapse: collapse;
+
+} 
+
+.rejilla-servicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+   
+
+
