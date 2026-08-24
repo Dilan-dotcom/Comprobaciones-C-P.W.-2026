@@ -55,8 +55,8 @@ h2::after {
   margin-left: 200px;
 }
 .boton {
-  align-content: center;
-  margin-left: 25rem;
+
+  margin-left: 20px;
   padding: 20px;
   background-color: green;
   color: white;
@@ -185,3 +185,42 @@ input:focus {
   border-color: rgb(7, 7, 7);
   outline: none;
 }
+input[type="text"], input[type="number"], input[type="date"], input[type="categoria"], input[type="tel"], input[type="email"], textarea{
+    width: 90%;
+    padding: 10px ;
+    border-radius: 10px;
+}
+.opcion{
+    margin: 30px;
+}
+input[type="radio"]{
+    border-collapse: collapse;
+   
+}
+input[type="checkbox"]{
+    padding: 10px;
+
+}
+input[type="checkbox"]:focus{
+    border: 5px solid;
+    border-color: blue;
+outline: none;}
+
+.volver a{
+    display: flex;
+    color: rgb(16, 160, 160);
+    
+}
+.indice{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    
+   background-color: antiquewhite;
+}
+.indice a {
+    color: rgb(63, 62, 60);
+    text-decoration: none;
+
+}
+
