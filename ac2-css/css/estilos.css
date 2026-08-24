@@ -4,7 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-}
+  
+
 /*index*/
 body {
   background-color: rgb(240, 234, 234);
@@ -82,10 +83,10 @@ h1:hover{
 /*animaicion */
 @keyframes pulso {
   0%, 100% {
-    transform: scale (1);
+    transform: scale 1;
   }
   50% {
-    transform: scale(1.08);
+    transform: scale 1.08;
   }
 }
 
