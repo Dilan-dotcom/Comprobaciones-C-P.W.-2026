@@ -15,7 +15,7 @@ body {
 }
 
 h2::after {
-  content: 📖;
+  content:  ★;
   color: red;
   object-fit: contain;
 }
