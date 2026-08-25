@@ -344,3 +344,20 @@ img{
   padding-bottom: var(--esp-xl);
   border-bottom: 0.2rem solid var(--linea);
 }
+
+#cabecera {
+  display: flex;
+  justify-content: space-between; /*un elemento lo pega a la derecha y el otrto a la izquierda */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--esp-sm);
+  max-width: var(--ancho-max); /*da ancho*/
+  margin: 0 auto; /*da centrado*/
+  padding: var(--esp-sm) var(--esp-md);
+  background-color: var(--blanco);
+  border: 0.1rem solid var(--linea);
+  /*estos 3 se usaron para que el header no se mueva SE USAN LOS 3*/
+  position: sticky;
+  top: 0;
+  z-index: 100%;
+}
