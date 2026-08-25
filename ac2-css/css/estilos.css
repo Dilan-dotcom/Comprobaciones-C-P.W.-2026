@@ -238,18 +238,43 @@ outline: none;}
 }
 
 :root {
-  --tinta: #1f1b14
-  --suave: #6b6259
-  --marca: #5b3a29
-  --acento: #a6572f
-  --acento-osc :#7f4224
-  --papel: #f8f8f3
+  --tinta: #1f1b14;
+  --suave: #6b6259;
+  --marca: #5b3a29;
+  --acento: #a6572f;
+  --acento-osc :#7f4224;
+  --papel: #f8f8f3;
   --papel:-atl: #f1eae0
   --linea: #ddd2c4
-  --blanco: #ffffff
-  --error: #823a2f
-  --exito: #2e7d32
+  --blanco: #ffffff;
+  --error: #823a2f;
+  --exito: #2e7d32;
 
   /*escallas*/
-  --esp-xs: 0.8rem
+  --esp-xs: 0.8rem;
+  --esp-sm: 1.6rem;
+  --esp-md: 2.4rem;
+  --esp-lg: 4rem;
+  --esp-xl: 6rem;
+  /*sombra*/
+  /*fuente*/
+  --fuente-titulo: georgia, 'times new roman', serif;
+--fuente-texto: 'segoe ui' ,Arial, sans-serif;
+
+}
+  /*reset y base*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--fuente-texto);
+  color: var(--tinta);
+  background-color: var();
 }
