@@ -323,3 +323,13 @@ img{
   margin-right: auto;
   padding: var(--esp-lg) var(--esp-md);
 }
+
+#portada,
+#servicios,
+#historia,
+#existencias,
+#categorias,
+#pedidos {
+  margin: var(--esp-xl);
+  
+} 
