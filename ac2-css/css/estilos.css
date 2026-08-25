@@ -193,3 +193,13 @@ hero h2 {
 margin-bottom: var(--esp-xs);
 opacity: 0.94;
 }
+
+.rejilla-servicios {
+  display: flex;
+  gap: var(--esp-md);
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  flex: 1 1 28rem; /*trabaja la parte resposive (lo que si se hace la pantalla mas pequeña se acomode)*/
+}
