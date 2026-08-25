@@ -369,9 +369,26 @@ img{
   margin-bottom: 0;
 }
 
-.lema{
+.lema {
   font-size: 1.4rem;
   color: var(--suave);
   margin-bottom: 0;
   font-style: italic;
+}
+
+/*menu cabecera*/
+
+.menu-principal ul {
+  display: flex;
+  gap: var(--esp-xs);
+  list-style: none; /*le quita los puntitos a la pagina a la hora de pobner links */
+}
+
+.menu-principal a{  
+  display: inline-block;/*permite aplicar padding y medidas (lo que no deja es el coso dein inicio con esta etiqueta si deja)*/
+  padding: var(--esp-xs) var(--esp-sm);
+  color: var(--tinta);
+  font-weight: 600;
+border-radius: var(--radio);
+transition: backgroun-color var(--transicion);
 }
