@@ -329,7 +329,18 @@ img{
 #historia,
 #existencias,
 #categorias,
-#pedidos {
+#pedido {
   margin: var(--esp-xl);
   
 } 
+
+#servicios > h2,
+#portada > h2,
+#historia > h2,
+#existencias > h2,
+#categorias > h2,
+#pedido> h2 {
+  margin-bottom: var(--esp-md);
+  padding-bottom: var(--esp-xl);
+  border-bottom: 0.2rem solid var(--linea);
+}
