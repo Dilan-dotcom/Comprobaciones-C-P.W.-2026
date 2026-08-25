@@ -1,241 +1,3 @@
-* {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0;
-  box-sizing: border-box;
-  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-}
-
-/*index*/
-body {
-  background-color: rgb(240, 234, 234);
-   font-family: "Cedarville Cursive", cursive;
-}
-
-.cabecera {
-  display: flex;
-  flex-direction: row;
-}
-
-h1:hover{
-    
-    background-color: cadetblue;
-    background-size:cover;
-
-}
-
-
-.cita-autoria::first-letter {
-  font-size: 2rem;
-  color: rgb(83, 83, 87);
-  font-weight: 600;
-}
-.cita-autoria::after {
-  content: →;
-  font-weight: bold;
-}
-
-.hero {
-  display: block;
-  align-self: center;
-  margin-top: 5px;
-  margin-right: 5px;
-  background-color: rgb(103, 26, 26);
-  padding: 100px;
-  color: white;
-  align-items: center;
-}
-
-.hero p {
-  margin-top: 20px;
-  margin-left: 200px;
-  font-size: smaller;
-  margin-bottom: 50px;
-}
-.hero-texto {
-  padding-left: 35px;
-}
-.hero h2 {
-  font-size: 30px;
-  margin-left: 200px;
-}
-.boton {
-
-  margin-left: 20px;
-  padding: 20px;
-  background-color: green;
-  color: white;
-  border-collapse: collapse;
-}
-/*se trabajo con grid aqui*/
-.rejilla-servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.tarjeta {
-  background-color: rgb(180, 175, 167);
-}
-.tarjeta h3 {
-  font-size: 25px;
-}
-
-/*animaicion */
-@keyframes pulso {
-  0%, 100% {
-    transform: scale 1;
-  }
-  50% {
-    transform: scale 1.08;
-  }
-}
-
-.cita {
-  background-color: blanchedalmond;
-  padding: 20px;
-  border-left: 10px solid brown;
-}
-
-.boton {
-  animation: pulso 2s ease-in-out infinite;
-  animation-direction: reverse;
-}
-.cita p::before {
-  content: " '' ";
-  font-weight: 800;
-  font-size: 60px;
-}
-.cita p::first-line {
-  font-family: cursive;
-}
-.cita-autoria {
-  text-align: right;
-}
-
-.panel-aviso {
-  background-color: darkgray;
-  padding: 20px;
-  border-left: 10px solid brown;
-  padding-bottom: 20px;
-  margin-bottom: 80px;
-}
-
-.pie-contenido {
-  background-color: maroon;
-  color: white;
-  padding-top: 50px;
-}
-.datos-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 40px;
-}
-header nav ul {
-  display: flex;
-  justify-content: end;
-  text-decoration-line: none;
-}
-
-#cabecera {
-  background-color: rgb(251, 249, 246);
-  padding: 5px;
-  border-bottom: 10px solid lightgray;
-  position: sticky;
-}
-/*catalogo*/
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-tbody tr:nth-child(even) {
-  background-color: beige;
-}
-thead {
-  background-color: brown;
-  color: aliceblue;
-}
-tbody:hover {
-  background-color: darkgray;
-}
-tfoot {
-  background-color: brown;
-  color: aliceblue;
-}
-
-.glosario {
-  background-color: azure;
-  padding: 20px;
-}
-
-.glosario dt {
-  color: black;
-  font-weight: 800;
-  padding: 5px;
-}
-.glosario dd {
-  padding-left: 50px;
-}
-
-.grupo-campos {
-  background-color: whitesmoke;
-}
-.campo input {
-  background-color: darkgrey;
-}
-
-input:focus {
-  border-color: rgb(7, 7, 7);
-  outline: none;
-}
-input[type="text"], input[type="number"], input[type="date"], input[type="categoria"], input[type="tel"], input[type="email"], textarea{
-    width: 90%;
-    padding: 10px ;
-    border-radius: 10px;
-}
-.opcion{
-    margin: 30px;
-}
-input[type="radio"]{
-    border-collapse: collapse;
-   
-}
-input[type="checkbox"]{
-    padding: 10px;
-
-}
-input[type="checkbox"]:focus{
-    border: 5px solid;
-    border-color: blue;
-outline: none;}
-
-.volver a{
-    display: flex;
-    color: rgb(16, 160, 160);
-    
-}
-.indice{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: unset;
-    
-   background-color: antiquewhite;
-}
-.indice a {
-    color: rgb(63, 62, 60);
-    text-decoration: none;
-
-}
-.boton-principal{
-    margin: 4px;
-}
-
-.boton-principal:hover{
- 
-    scale: calc(1.1);
-}
 
 :root {
   --tinta: #1f1b14;
@@ -244,7 +6,7 @@ outline: none;}
   --acento: #a6572f;
   --acento-osc :#7f4224;
   --papel: #f8f8f3;
-  --papel:-atl: #f1eaf1;
+  --papel-atl: #c4bebd;
   --linea: #ddd2c4;
   --blanco: #ffffff;
   --error: #823a2f;
@@ -391,4 +153,43 @@ img{
   font-weight: 600;
 border-radius: var(--radio);
 transition: backgroun-color var(--transicion);
+}
+
+/*pseudo clase */
+.menu-principal a::hover{
+  background-color: var(--papel-atl);
+  color: var(--marca);
+
+}
+.menu-principal a focus{
+  outline: 0.2rem solid var(--acento);
+  outline-offset: 0.2rem; /*aaplica con el tab*/
+}
+.menu-principal .enlace-activo{
+  color: var(--acento);
+  background-color: var(--papel-atl);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--marca), var(--acento));
+  color: var(--blanco);
+  padding: var(--esp-xl) var(--esp-md);
+  border-radius: var(--radio);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-sm);
+}
+hero h2 { 
+  color: var(--blanco);
+  font-size: 3.6rem;
+  margin-bottom: 0;
+}
+.hero-texto{
+ max-width: 60ch;
+ font-size: 1.8rem;
+margin-bottom: var(--esp-xs);
+opacity: 0.94;
 }
