@@ -1,0 +1,117 @@
+
+:root{
+    /*variables*/
+    --fondo: #f5f5dc;
+    --texto: #a0522d;
+    --titulo: #0e0d0d;
+}
+/*reset y titulos*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--texto);
+    background-color: var(--fondo);
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    line-height: 1.2;
+    color: var(--titulo);
+}
+h1{
+    font-size: 4rem;
+ }
+ h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    margin-bottom: 1.6rem;
+}
+
+a{
+    color: brown;
+    text-decoration: none;
+}
+/*menu con flex*/
+#cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:first baseline;
+    gap: 2rem;
+    flex-direction:row;
+    padding-right: 5rem;
+    z-index: 100%;
+}
+.identidad h1{position: relative; 
+padding: 20px;}
+
+.identidad h1::after{
+    content: ' 🍃 ';
+    position: absolute;
+
+}
+
+.navegacion li{
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: coral;
+    border: 3px solid var(--titulo); 
+    border-radius: 10px;
+    
+}
+.frase{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+#principal{
+    padding: 2rem;
+    margin: 2rem;
+    
+}
+
+p::first-letter{
+    font-family: cursive;
+    font-size: 20px;
+}
+h2, h3 {
+    text-align: center;
+}
+#bienvenida{
+    background-color: bisque;
+    align-items: center;
+}
+
+.bloque{
+    background-color: bisque;
+}
+
+.bloque-nota{
+    
+    
+    background-color: aliceblue;
+    border: 3px solid #0e0d0d;
+}
+
