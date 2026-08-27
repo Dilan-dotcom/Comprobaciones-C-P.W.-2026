@@ -54,9 +54,7 @@ a{
     align-items:center;
     gap: 2rem;
     flex-direction:row;
-    padding-right: 5rem;
-    
-    
+    padding-right: 5rem;    
     border-bottom: 2px solid var(--titulo);
     
 }
@@ -149,3 +147,50 @@ h2, h3 {
 }
 
 /*parte plantas*/
+
+#principal{
+    margin: 0 auto;
+    max-width: 120rem;
+}
+.sumario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 1.6rem;
+}
+
+.sumario li{
+   display: inline-block;
+   justify-content: space-evenly;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.tabla-especies{
+    background-color: aliceblue;
+   margin-left: 35rem;
+   font-size: 1.8rem;
+   border: 1px solid ;
+}
+
+.tabla-especies tr:nth-child(even){
+    background-color: darkcyan;
+}
+
+#grupos {
+font-weight: 900;
+ font-size: 1.6rem;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+ text-decoration: none;
+}
+
+
+#grupos .lista-grupos{
+    text-decoration: none;
+    list-style: none;
+    
+}
