@@ -143,7 +143,6 @@ h2, h3 {
 
 .bloque-nota{
     
-    
     background-color: aliceblue;
     border: 3px solid #0e0d0d;
 }
@@ -203,6 +202,9 @@ font-weight: 900;
  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
  text-decoration: none;
 }
+
+
+
 #encargo{position:initial; padding: 20px; }
 #encargo h2::before{
     content:'🚚';
