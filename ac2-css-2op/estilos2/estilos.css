@@ -51,11 +51,14 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:first baseline;
+    align-items:center;
     gap: 2rem;
     flex-direction:row;
     padding-right: 5rem;
-    z-index: 100%;
+    
+    
+    border-bottom: 2px solid var(--titulo);
+    
 }
 .identidad h1{position: relative; 
 padding: 20px;}
@@ -86,10 +89,25 @@ padding: 20px;}
     letter-spacing: 3px;
     font-weight: 800;
 }
-#principal{
-    padding: 2rem;
-    margin: 2rem;
-    
+
+.destacado{
+    border: 10px solid var(--texto);
+    padding: 100px;
+    margin: 70px ;
+}
+.destacado-texto{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.accion{
+   
+    text-transform: uppercase;
+    background-color: #a0522d;
+    color: var(--fondo);
+    padding: 15px;
+   margin-left: 50rem;
+   margin-top: 10px;
 }
 
 p::first-letter{
@@ -106,6 +124,7 @@ h2, h3 {
 
 .bloque{
     background-color: bisque;
+    margin-bottom: 1rem;
 }
 
 .bloque-nota{
@@ -114,4 +133,19 @@ h2, h3 {
     background-color: aliceblue;
     border: 3px solid #0e0d0d;
 }
+/*footer*/
 
+#pie{
+    background-color: var(--texto);
+    color: var(--fondo);
+}
+.contenido-pie{
+    padding-top: 40px; 
+}
+
+.direccion{
+    padding-left: 20px;
+    text-decoration:underline;
+}
+
+/*parte plantas*/
