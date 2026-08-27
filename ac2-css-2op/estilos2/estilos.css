@@ -162,7 +162,7 @@ h2, h3 {
     padding: 1.6rem;
 }
 
-.sumario li{
+.sumario li{ 
    display: inline-block;
    justify-content: space-evenly;
     padding-left: 2rem;
@@ -189,8 +189,39 @@ font-weight: 900;
 }
 
 
-#grupos .lista-grupos{
+#grupos .lista-grupos li{
     text-decoration: none;
     list-style: none;
-    
+    font-family: Caacupé One;
 }
+
+fieldset{
+    border: 0.1rem solid var(--texto);
+}
+legend{
+    padding: 0.8rem;
+    font-weight: 800;
+    color: var(--texto);
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=number], input[type=date], input[type=grupo], input[type=comentarios],  textarea {
+    width: 100%;
+    padding: 1rem 1.4rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    font-style: inherit;
+
+}
+input[type=checkbox]{
+    margin: 2rem;
+}
+input[type=radio]{margin-left: 20px;}
+ 
+/*animaciones y trancisiones*/
