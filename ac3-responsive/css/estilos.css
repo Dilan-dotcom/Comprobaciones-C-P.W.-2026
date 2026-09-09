@@ -40,6 +40,7 @@
 
 /* ─── BASE ───────────────────────────────────────────────────────────── */
 body {
+  width: 100%;
   font-family: var(--fuente-texto);
   font-size: 1rem;
   line-height: 1.65;
@@ -74,10 +75,10 @@ img {
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
-  max-width: 1180px;
+  max-width: 118rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 90px 30px;
+  padding: 9rem 3rem;
 }
 
 .seccion-alterna {
@@ -86,7 +87,7 @@ img {
 }
 
 .seccion-alterna > * {
-  width: 1180px;
+  max-width: 118rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -212,8 +213,11 @@ img {
 
 
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
-.fila-propuestas {
+.fila-propuestas{
+  
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2.6rem;
 }
 
@@ -264,7 +268,7 @@ img {
 }
 
 .pieza img {
-  width: 100%;
+ 
   height: 24rem;
   object-fit: cover;
   transition: transform 0.4s ease;
@@ -573,6 +577,7 @@ img {
   max-width:118rem;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 4.4rem;
   justify-content: space-between;
 }
@@ -615,11 +620,11 @@ img {
 @media (min-width: 360px){
 h1 {font-size: 4rem;}
 h2 {font-size: 2.4rem;}
-h3 {font-size: 1.5rem;}
+h3 {font-size: 2rem;}
 }
 
 
-@media (min-width:360px){
+@media (max-width:360px){
  .marca {font-size: 0.4rem;}
  .cabecera{
   display:flex;
@@ -651,10 +656,14 @@ max-width: auto;}
    .marca {font-size: 0.4rem;}
  .cabecera{
   display:flex;
-  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: auto;
   
+  .pie{
+    width: 100%;
+  }
+  .ubicacion img{width: fit-content;}
 }
 
 .marca a{font-size: 3rem;}
@@ -662,14 +671,9 @@ max-width: auto;}
 
 @media(min-width:360px)
 {
-.fila-propuestas{display: grid;
-grid-template-columns: 1fr;}
+
 .rejilla-galeria{display: grid;
 grid-template-columns: 1fr;
-width: 100%;}
-
-.pie{
-  display: block;
-}
+align-items: center;}
 
 }
