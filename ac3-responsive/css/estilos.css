@@ -122,7 +122,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 118rem;
+  width: 100%;
   margin: 0 auto;
   padding: 1.8rem 3rem;
   background-color: var(--blanco);
@@ -612,20 +612,64 @@ img {
 }
 
 /*media querrys*/
+@media (min-width: 360px){
+h1 {font-size: 4rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.5rem;}
+}
 
-@media (min-width:768px){
-  .cabecera{flex-direction: row;
+
+@media (min-width:360px){
+ .marca {font-size: 0.4rem;}
+ .cabecera{
+  display:flex;
+  flex-direction: column;
   justify-content: space-between;
-align-items: center;}
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
 
   .menu{flex-direction: row;
- 
-width: auto;}
+ align-items: center;
+max-width: auto;}
 
-.menu-enlace{
-  display: inline-block;
-  padding: var(--esp-xs) var(--esp-sm);
-  border-bottom: none;
-  border-radius: var(--radio);
+.navegacion{
+  display: inline-block; 
+  width: auto;
+  gap: 1.5rem;
+  
 }
+.navegacion a {
+  width: auto;
+  padding: 0.5rem;
+} 
+ 
+}
+
+@media (min-width:1024px) {
+   .marca {font-size: 0.4rem;}
+ .cabecera{
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  
+}
+
+.marca a{font-size: 3rem;}
+}
+
+@media(min-width:360px)
+{
+.fila-propuestas{display: grid;
+grid-template-columns: 1fr;}
+.rejilla-galeria{display: grid;
+grid-template-columns: 1fr;
+width: 100%;}
+
+.pie{
+  display: block;
+}
+
 }
