@@ -80,6 +80,7 @@ img {
 }
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
+/*edite medidas de px rem*/
 .seccion {
   max-width: 118rem;
   margin-left: auto;
@@ -739,7 +740,7 @@ img {
     font-size: 3rem;
   }
 }
-
+/*adaptacion de la tabla*/
 @media (min-width: 360px) {
   .tabla {
     border: none;
