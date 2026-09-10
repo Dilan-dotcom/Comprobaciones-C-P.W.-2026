@@ -173,7 +173,9 @@ img {
 }
 
 .menu-enlace {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  min-height: 4.4rem;
   padding: 1rem 1.8rem;
   color: var(--tinta);
   font-weight: 600;
@@ -281,7 +283,7 @@ img {
 /* ─── GALERÍA · Grid ─────────────────────────────────────────────────── */
 .rejilla-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.8rem;
 }
 
@@ -294,12 +296,16 @@ img {
 }
 
 .pieza img {
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
 .pieza:hover img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   transform: scale(1.06);
 }
 
@@ -364,14 +370,16 @@ img {
 
 /* ─── TABLA ──────────────────────────────────────────────────────────── */
 .tabla {
-  font-size: 1rem;
+  font-size: 0.5rem;
+  position:relative;
   width: 100%;
   border-collapse: collapse;
   background-color: var(--blanco);
   border-radius: var(--radio);
+ 
   overflow-x: auto;
   box-shadow: var(--sombra);
-  min-width: 48rem;
+  min-width: 50rem;
 }
 
 .tabla-titulo {
@@ -425,13 +433,14 @@ img {
 }
 .columna-figura {
   height: auto;
-  width: 56rem;
+  width: 100%;
   margin: 0;
 }
 
 .columna-figura img {
   height: auto;
   width: 100%;
+  display: block;
   border-radius: var(--radio);
   box-shadow: var(--sombra);
 }
@@ -627,11 +636,12 @@ img {
 }
 
 .pie-columnas {
-  max-width: 118rem;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 4.4rem;
+  overflow-x: auto;
   justify-content: space-between;
 }
 
@@ -715,7 +725,10 @@ img {
     padding: 0.5rem;
   }
 }
-
+@media (max-width:1024px){
+  .cabecera{flex-direction: row; justify-content: space-between;}
+  .rejilla-galeria{grid-template-columns: repeat(4, 1fr);}
+}
 @media (min-width: 1024px) {
   .marca {
     font-size: 0.4rem;
@@ -731,6 +744,7 @@ img {
       width: 100%;
     }
     .ubicacion img {
+      max-width: 100%;
       height: auto;
       width: fit-content;
     }
@@ -745,11 +759,12 @@ img {
   .tabla {
     border: none;
     min-width: 100%;
+    width: 100%;
   }
   td,
   th {
-    padding: 1.6rem;
-    font-size: 1.6rem;
+    padding: 2rem;
+    font-size: 1rem;
   }
   .rejilla-galeria {
     display: grid;
