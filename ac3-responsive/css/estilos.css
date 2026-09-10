@@ -714,7 +714,7 @@ img {
   .menu {
     flex-direction: row;
     align-items: center;
-    max-width: auto;
+    max-width: 100%;
   }
 
   .navegacion {
@@ -749,8 +749,8 @@ img {
 }
 
 .tabla-titulo {
-  padding: 1.rem;
-  font-weight: 600;
+  padding: 1.0rem;
+  font-weight:600;
   text-align: left;
   color: var(--suave);
   font-size: 1.5rem;
@@ -803,10 +803,10 @@ img {
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    padding: auto;
+    padding: 0 auto;
 
     .pie {
-      width: 100%;
+      width: 118rem;
     }
     .ubicacion img {
       max-width: 100%;
@@ -818,7 +818,7 @@ img {
   .marca a {
     font-size: 3rem;
   }
-}
+
 /*adaptacion de la tabla*/
 @media (min-width: 360px) {
   .tabla {
@@ -864,4 +864,4 @@ width: 100%;}
   *{transition-duration: 0.1ms; 
   scroll-behavior:auto;
 }
-}
+}}
