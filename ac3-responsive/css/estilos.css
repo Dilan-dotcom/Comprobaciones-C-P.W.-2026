@@ -265,7 +265,7 @@ img {
 
 .tarjeta-icono {
   color: var(--terracota);
-  margin: 0 auto 14px;
+  margin: 0 auto 1.4rem;
 }
 .tarjeta-titulo {
   margin-bottom: 0.8rem;
