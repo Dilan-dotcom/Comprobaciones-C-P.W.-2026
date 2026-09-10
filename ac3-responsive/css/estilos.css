@@ -803,7 +803,7 @@ img {
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0 auto;}
 
     .pie {
       width: 118rem;
@@ -864,4 +864,4 @@ width: 100%;}
   *{transition-duration: 0.1ms; 
   scroll-behavior:auto;
 }
-}}
+}
