@@ -856,3 +856,11 @@ flex-direction: column; gap: 1.5rem; align-items: center;
 width: 100%;}
 }
 
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration: 0.1ms; 
+  scroll-behavior:auto;
+}
+  *{transition-duration: 0.1ms; 
+  scroll-behavior:auto;
+}
+}
