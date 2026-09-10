@@ -82,10 +82,10 @@ img {
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 /*edite medidas de px rem*/
 .seccion {
-  max-width: 118rem;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 9rem 3rem;
+  padding: 5rem 1rem;
 }
 
 .seccion-alterna {
@@ -424,6 +424,7 @@ img {
 /* ─── DOS COLUMNAS · Flexbox ─────────────────────────────────────────── */
 .dos-columnas {
   display: flex;
+  flex-direction: column;
   gap: 4.4rem;
   align-items: flex-start;
 }
@@ -758,8 +759,8 @@ img {
 @media (min-width: 360px) {
   .tabla {
     border: none;
-    min-width: 100%;
-    width: 100%;
+    min-width: 50rem;
+    
   }
   td,
   th {
@@ -773,3 +774,17 @@ img {
   }
 }
 /*continuacion 10-9-2026*/
+/*impresion de la pagina */
+@media print {
+  .cabecera,
+  .navegacion,
+  .menu,
+  .boton,
+  .fila-botones,
+  .pie{
+    display: none;
+  }
+.cabecera{display: flex;
+flex-direction: column; gap: 1.5rem; align-items: center;
+width: 100%;}
+}
