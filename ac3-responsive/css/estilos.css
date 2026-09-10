@@ -207,12 +207,14 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 56rem;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem;
   text-align: center;
+  margin-left: 10rem;
+   margin-right: 10rem;
 }
 
 .portada-caja {
@@ -633,11 +635,11 @@ img {
   background-color: var(--verde);
   color: var(--blanco);
   padding: 7rem 3rem 2.6rem;
-  margin-top: 8rem;
+  margin-top: 0.8rem;
 }
 
 .pie-columnas {
-  max-width: 100%;
+  max-width: 118rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -735,6 +737,7 @@ img {
 }
 @media (min-width: 1024px) {
   
+  
     .tabla {
   width: 100%;
   border-collapse: collapse;
@@ -790,11 +793,6 @@ img {
   text-align: center;
   color: var(--suave);
 }
-
-
-
-  }
-  
   
   .marca {
     font-size: 0.4rem;
@@ -824,8 +822,7 @@ img {
 @media (min-width: 360px) {
   .tabla {
     border: none;
-  
-    
+
   }
   td,
   th {
@@ -841,7 +838,7 @@ img {
 }
 
 
-@media(min-width:768px){}
+
 
 /*continuacion 10-9-2026*/
 /*impresion de la pagina */
