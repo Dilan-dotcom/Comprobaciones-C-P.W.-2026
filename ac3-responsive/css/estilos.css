@@ -58,17 +58,17 @@ h3 {
 }
 
 h1 {
-  font-size: 5.2rem;
+  font-size: 3.2rem;
 }
 h2 {
-  font-size: 3.4rem;
+  font-size: 2.4rem;
 }
 h3 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
-
+/*reduzco tamaño para mas comodidad*/
 p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -77,6 +77,8 @@ a {
 }
 
 img {
+  height: auto;
+  max-width: 100%;/*imagen adaptable, ya no se deforma ,creo*/
   display: block;
 }
 
@@ -212,15 +214,14 @@ img {
   justify-content: center;
   padding: 3rem;
   text-align: center;
-  margin-left: 10rem;
-   margin-right: 10rem;
+  
 }
 
 .portada-caja {
   background-color: rgba(0, 0, 0, 0.48);
   padding: 4.8rem;
   border-radius: var(--radio);
-  width: 72rem;
+  max-width: 72rem;
 }
 
 .portada-titulo {
@@ -371,6 +372,13 @@ img {
 }
 
 /* ─── TABLA ──────────────────────────────────────────────────────────── */
+/*contenedor para poder mostara la tabla  dentro del la anchura necesaria*/
+.caja-tabla {
+  overflow-x: auto; 
+  width: 100%;
+}
+
+
 .tabla {
  /*arreglo de la tabla quitando medida sin sentido*/
   width: 100%;
@@ -394,7 +402,7 @@ img {
 .tabla td {
   padding: 1.5rem;
   text-align: left;
-  border-bottom: 1px solid var(--linea);
+  border-bottom: 0.1rem solid var(--linea);
 }
 
 .tabla thead th {
@@ -727,25 +735,22 @@ img {
 /*vista celular*/
 
 @media (max-width: 767px) {
-  /*header*/
+  
+  
+.rejilla-galeria {
+    grid-template-columns: 1fr;
+  }
+  .pie-columnas {
+    flex-direction: column;
+  }
+  .dos-columnas {
+    flex-direction: column;
+  }
+/*header*/
   .cabecera {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
-
-  
-  .pie-columnas {
-    flex-direction: column;
-  }
-  
- 
-  .rejilla-galeria {
-    grid-template-columns: 1fr;
-  }
-
-  .dos-columnas {
-    flex-direction: column;
   }
 }
 
