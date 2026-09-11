@@ -250,7 +250,7 @@ img {
 .tarjeta {
    display: flex;
   flex: 1 1 35rem;
-  max-width: 36rem;
+  
   background-color: var(--blanco);
   padding: 2.8rem;
   border-radius: var(--radio);
@@ -693,7 +693,7 @@ img {
 
 
 /*vista de tableta o superiores*/
-@media (min-width: 361px) and (max-width: 768px){
+@media(orientation: landscape) and ( min-width: 361px) and (max-width: 768px){
   /*fuentes*/
   
   #galeria{ width: 100%;}
@@ -727,6 +727,10 @@ img {
 .seccion-alterna{ 
   width: 100%;
 }
+.rejilla-galeria{
+  grid-template-columns: repeat(auto-fit,minmax(25rem,  1fr));
+}
+
   /*cursos*/
   .dos-columnas{
     flex-direction: row;
@@ -747,16 +751,24 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 1.8rem;
 }
-
+.indice{text-align: center;}
+.indice-lista{justify-content: center;}
 }
 
 
+@media(min-width:769px){
+
+  .cabecera{max-width: 100%;}
+  .indice{text-align: center;}
+  .indice-lista{justify-content: center;}
+}
 
 
 
 
 /*vista monitor*/
 @media (min-width:1024px){
+ 
   .rejilla-galeria{grid-template-columns: repeat(4, 1fr);}
 }/*inicio*/
 
