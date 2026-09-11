@@ -38,7 +38,7 @@ html {
 
   --radio: 0.6rem;
   --sombra: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
-  --sombra-alta: 0 8px 20px rgba(0, 0, 0, 0.14);
+  --sombra-alta: 0 0.8rem 2rem rgba(0, 0, 0, 0.14);
 }
 
 /* ─── BASE ───────────────────────────────────────────────────────────── */
@@ -86,8 +86,9 @@ img {
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 /*edite medidas de px rem*/
+
 .seccion {
-  max-width: 118rem;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding: 4.6rem 1.6rem;
@@ -100,7 +101,7 @@ img {
 }
 
 .seccion-alterna > * {
-  max-width: 118rem;
+  max-width: 36rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -111,7 +112,7 @@ img {
 }
 
 .seccion-entrada {
-  max-width: 64rem;
+  max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom:  4.8rem;;
@@ -120,7 +121,7 @@ img {
 }
 
 .pagina-encabezado {
-  max-width: 118rem;
+  max-width: 36rem;
   margin: 0 auto;
   padding: 8rem 3rem 4.8rem;
   text-align: center;
@@ -143,7 +144,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 118rem;
+  max-width: 36rem;
   margin: 0 auto;
   padding: 1.8rem 3rem;
   background-color: var(--blanco);
@@ -290,7 +291,7 @@ img {
 /* ─── GALERÍA · Grid ─────────────────────────────────────────────────── */
 .rejilla-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns:repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.8rem;
 }
 
@@ -380,7 +381,7 @@ img {
 }
 
 .tabla {
- /*arreglo de la tabla quitando medida sin sentido*/
+/*arreglo de la tabla quitando medida sin sentido*/
   width: 100%;
   border-collapse: collapse;
   background-color: var(--blanco);
@@ -435,7 +436,7 @@ img {
 }
 
 .columna {
- max-width: 56rem;
+ max-width: 90%;
 }
 .columna-figura {
 
@@ -504,7 +505,7 @@ img {
 
 /* ─── FORMULARIO ─────────────────────────────────────────────────────── */
 .formulario {
-  max-width: 72rem;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -641,7 +642,7 @@ img {
 }
 
 .pie-columnas {
-  max-width: 118rem;
+  max-width: 36rem;
   margin: 0 auto;
   display: flex;
   gap: 4.4rem;
@@ -677,7 +678,7 @@ img {
 }
 
 .pie-creditos {
-  max-width: 118rem;
+  max-width: 36rem;
   margin: 4.4rem auto 0;
   padding-top: 1.8rem;
   border-top: 0.1rem solid rgba(255, 255, 255, 0.22);
@@ -689,72 +690,66 @@ img {
 
 /*media querrys*/
 
+
+
 /*vista de tableta o superiores*/
-@media (min-width: 768px) {
+@media (min-width: 361px) and (max-width: 768px){
   /*fuentes*/
+  
+  #galeria{ width: 100%;}
   h1 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
 
+  .cabecera{max-width: 76rem;}
   
 .grupo{
   padding: 2.6rem;
   margin-bottom: 2.6rem;
 }
-   .opcion-marca {
+  .opcion-marca {
     width: 1.8rem;
     height: 1.8rem;
   }
-  .pie-columnas{flex-direction: row;}
+  .pie-columnas{ max-width: 76rem; 
+  flex-direction: row;}
 
   /*inicio*/
   .rejilla-galeria{
     grid-template-columns: 1fr 1fr;
   }
-
-
+.seccion-alterna{ 
+  width: 100%;
+}
   /*cursos*/
   .dos-columnas{
     flex-direction: row;
   }
   .seccion{
-    padding: 9.0rem 3.0rem;
+    width: 100%;
+    padding: 3.0rem 1.0rem;
   }
 
   /*pie de pagina*/
 .pie-columnas {
     flex-direction: row;
   }
+.portada{height: auto;}
 
-
-}
-/*vista celular*/
-
-@media (max-width: 768px) {
-  
-  
 .rejilla-galeria {
-    grid-template-columns: 1fr;
-  }
-  .pie-columnas {
-    flex-direction: column;
-  }
-  .dos-columnas {
-    flex-direction: column;
-  }
-/*header*/
-  .cabecera {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
 }
+
+}
+
 
 
 
