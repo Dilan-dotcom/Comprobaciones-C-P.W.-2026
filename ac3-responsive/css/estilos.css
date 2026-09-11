@@ -147,7 +147,28 @@ img {
   background-color: var(--blanco);
   border-bottom: 0.1rem solid var(--linea);
 }
+.menu{
+  display: block;
+  position: absolute;
+  background-color: var(--crema-alt);
+  top: 100%;
+  width: 0;
+  height: 0;
+  right: 0;
+  overflow: hidden;
+}
 
+.menu-h{
+  display: none;
+}
+.menu-h:checked ~ .menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+
+}
 .marca {
   display: flex;
   align-items: center;
@@ -372,12 +393,10 @@ img {
 }
 
 /* ─── TABLA ──────────────────────────────────────────────────────────── */
-/*contenedor para poder mostara la tabla  dentro del la anchura necesaria*/
-.caja-tabla {
-  overflow-x: auto; 
-  width: 100%;
-}
 
+#calendario{
+  overflow-x: auto;
+}
 
 .tabla {
  /*arreglo de la tabla quitando medida sin sentido*/
@@ -734,7 +753,7 @@ img {
 }
 /*vista celular*/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   
   
 .rejilla-galeria {
