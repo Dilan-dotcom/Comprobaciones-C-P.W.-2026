@@ -14,6 +14,12 @@
   box-sizing: border-box;
 }
 
+
+html {
+  font-size: 62.5%; /*tamaños con rem*/
+  scroll-behavior: smooth;
+}
+
 /* ─── VARIABLES ──────────────────────────────────────────────────────── */
 :root {
   --verde: #3d5a40;
@@ -30,8 +36,8 @@
   --fuente-titulo: Georgia, "Times New Roman", serif;
   --fuente-texto: "Segoe UI", Arial, sans-serif;
 
-  --radio: 6px;
-  --sombra: 0 3px 10px rgba(0, 0, 0, 0.08);
+  --radio: 0.6rem;
+  --sombra: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
   --sombra-alta: 0 8px 20px rgba(0, 0, 0, 0.14);
 }
 
@@ -43,10 +49,6 @@ body {
   line-height: 1.65;
   color: var(--tinta);
   background-color: var(--crema);
-}
-html {
-  font-size: 62.5%; /*tamaños con rem*/
-  scroll-behavior: smooth;
 }
 
 h1,
@@ -147,28 +149,7 @@ img {
   background-color: var(--blanco);
   border-bottom: 0.1rem solid var(--linea);
 }
-.menu{
-  display: block;
-  position: absolute;
-  background-color: var(--crema-alt);
-  top: 100%;
-  width: 0;
-  height: 0;
-  right: 0;
-  overflow: hidden;
-}
 
-.menu-h{
-  display: none;
-}
-.menu-h:checked ~ .menu{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  height: 100vh;
-
-}
 .marca {
   display: flex;
   align-items: center;
@@ -720,6 +701,8 @@ img {
   h3 {
     font-size: 2.3rem;
   }
+
+  
 .grupo{
   padding: 2.6rem;
   margin-bottom: 2.6rem;
