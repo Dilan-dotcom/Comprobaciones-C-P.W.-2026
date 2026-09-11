@@ -709,7 +709,7 @@ img {
   h3 {
     font-size: 1.5rem;
   }
-
+.seccion-alterna>*{max-width: 70rem;}
   .cabecera{
     flex-direction: row;
     max-width: 100%;}
@@ -726,14 +726,12 @@ img {
   flex-direction: row;}
 
   /*inicio*/
-  .rejilla-galeria{
-    grid-template-columns: 1fr 1fr;
-  }
-.seccion-alterna{ 
-  width: 100%;
-}
+
+  
+
 .rejilla-galeria{
   grid-template-columns: repeat(auto-fit,minmax(25rem,  1fr));
+  
 }
 
   /*cursos*/
